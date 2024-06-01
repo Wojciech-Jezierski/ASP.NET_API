@@ -17,5 +17,7 @@ namespace api.Models
         public Stock? Stock { get; set; }
         public string AppUserId { get; set; }
         public AppUser AppUser { get; set; }
+
+        public string Description { get; set; } = string.Empty;
     }
 }
