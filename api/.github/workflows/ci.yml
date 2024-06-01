@@ -11,21 +11,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Git
-      run: |
-        git config --global user.name 'Your Name'
-        git config --global user.email 'your-email@example.com'
+      - name: Set up Git
+        run: |
+          git config --global user.name 'Your Name'
+          git config --global user.email 'your-email@example.com'
 
-    - name: Add changes
-      run: git add .
+      - name: Add changes
+        run: git add .
 
-    - name: Commit changes
-      run: git commit -m "Automated commit"
+      - name: Commit changes
+        run: git commit -m "Automated commit"
 
-    - name: Push changes
-      run: git push -u origin master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push changes
+        run: git push -u origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKS_FDSS }}
